@@ -1,5 +1,5 @@
 import React from 'react';
-import { Root, Routes, addPrefetchExcludes } from 'react-static';
+import { Root, Head, Routes, addPrefetchExcludes } from 'react-static';
 //
 import { Link, Router } from 'components/Router';
 import Dynamic from 'containers/Dynamic';
@@ -12,6 +12,9 @@ addPrefetchExcludes(['dynamic']);
 function App() {
   return (
     <Root>
+      <Head>
+        <title>Best Programming Club</title>
+      </Head>
       <div style={{ textAlign: 'center', marginTop: '10em' }}>Coming soon</div>
       {/* <nav>
         <Link to="/">Home</Link>
