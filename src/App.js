@@ -10,9 +10,9 @@ import './app.css';
 addPrefetchExcludes(['dynamic']);
 
 function getEmailLink({ subject, body }) {
-  return `mailto:info@bestprogramming.club?subject=${window.encodeURIComponent(
+  return `mailto:info@bestprogramming.club?subject=${encodeURIComponent(
     subject
-  )}&body=${window.encodeURIComponent(body)}`;
+  )}&body=${encodeURIComponent(body)}`;
 }
 
 function App() {
